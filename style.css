@@ -5,9 +5,10 @@ body{
     font-family:Arial,sans-serif;
 }
 
-/* BANNER */
+/* COVER */
 .cover{
     width:100%;
+    text-align:center;
     background:#000;
 }
 
@@ -29,7 +30,7 @@ body{
     width:150px;
     height:150px;
     border-radius:50%;
-    border:5px solid #7c3aed;
+    border:4px solid #7c3aed;
     box-shadow:0 0 25px #7c3aed;
 }
 
@@ -48,15 +49,14 @@ header p{
     color:#b388ff;
 }
 
-/* SOCIAL */
 .social-links{
-    margin-top:10px;
+    margin-top:15px;
 }
 
 .social-links a{
     color:#b388ff;
-    margin:0 10px;
     text-decoration:none;
+    margin:0 10px;
     font-weight:bold;
 }
 
@@ -67,7 +67,7 @@ header p{
 /* HERO */
 .hero{
     text-align:center;
-    padding:50px 20px;
+    padding:60px 20px;
 }
 
 /* CARDS */
@@ -90,14 +90,14 @@ header p{
 
 .card:hover{
     transform:translateY(-8px);
-    box-shadow:0 0 20px #7c3aed;
+    box-shadow:0 0 25px #7c3aed;
 }
 
-/* YOUTUBE */
+/* YOUTUBE SECTION */
 .latest{
-    max-width:1200px;
+    max-width:1400px;
     margin:auto;
-    padding:60px 20px;
+    padding:50px 20px;
 }
 
 .latest h2{
@@ -105,9 +105,10 @@ header p{
     margin-bottom:30px;
 }
 
+/* VIDEO GRID */
 .video-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:25px;
 }
 
@@ -130,15 +131,14 @@ header p{
     object-fit:cover;
 }
 
-.video-info{
-    padding:20px;
+.video-card h3{
+    padding:15px;
+    margin:0;
 }
 
-.video-info h3{
-    margin-top:0;
-}
-
-.video-info a{
+.video-card a{
+    display:block;
+    padding:0 15px 20px;
     color:#b388ff;
     text-decoration:none;
 }
@@ -147,26 +147,30 @@ header p{
 footer{
     text-align:center;
     padding:40px;
+    margin-top:30px;
 }
 
 /* MOBILE */
 @media(max-width:768px){
 
 header h1{
-    font-size:38px;
-}
-
-.profile{
-    margin-top:-50px;
+    font-size:36px;
 }
 
 .profile img{
-    width:100px;
-    height:100px;
+    width:110px;
+    height:110px;
+}
+
+.hero{
+    padding:40px 15px;
 }
 
 .video-grid{
     grid-template-columns:1fr;
 }
 
+.card{
+    width:90%;
+}
 }
