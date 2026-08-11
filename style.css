@@ -8,14 +8,14 @@ body{
 /* COVER PHOTO */
 .cover{
     width:100%;
-    height:320px;
-    background:url("cover.jpg") center center/cover no-repeat;
+    height:350px;
+    background:url("banner.png") center center/cover no-repeat;
 }
 
-/* PROFILE PIC */
+/* PROFILE */
 .profile{
     text-align:center;
-    margin-top:-80px;
+    margin-top:-75px;
 }
 
 .profile img{
@@ -24,7 +24,8 @@ body{
     border-radius:50%;
     border:5px solid #7c3aed;
     object-fit:cover;
-    box-shadow:0 0 20px #7c3aed;
+    background:#000;
+    box-shadow:0 0 25px #7c3aed;
 }
 
 /* HEADER */
@@ -36,18 +37,25 @@ header{
 header h1{
     font-size:60px;
     margin:10px 0;
+    color:white;
 }
 
 header p{
     color:#b388ff;
+    font-size:18px;
 }
 
 /* SOCIAL LINKS */
+.social-links{
+    margin-top:15px;
+}
+
 .social-links a{
     color:#b388ff;
     text-decoration:none;
-    margin:0 10px;
+    margin:0 12px;
     font-weight:bold;
+    transition:0.3s;
 }
 
 .social-links a:hover{
@@ -57,14 +65,22 @@ header p{
 /* HERO */
 .hero{
     text-align:center;
-    padding:50px 20px;
+    padding:60px 20px;
+}
+
+.hero h2{
+    font-size:38px;
+}
+
+.hero p{
+    color:#ccc;
 }
 
 /* CARDS */
 .cards{
     display:flex;
     justify-content:center;
-    gap:20px;
+    gap:25px;
     flex-wrap:wrap;
     padding:20px;
 }
@@ -74,7 +90,7 @@ header p{
     background:#111;
     border:1px solid #7c3aed;
     border-radius:15px;
-    padding:20px;
+    padding:25px;
     transition:0.3s;
 }
 
@@ -83,15 +99,46 @@ header p{
     box-shadow:0 0 20px #7c3aed;
 }
 
-/* LATEST */
-.latest{
-    text-align:center;
-    padding:60px 20px;
+.card h2{
+    margin-top:0;
+    color:white;
+}
+
+.card p{
+    color:#ccc;
 }
 
 /* FOOTER */
 footer{
     text-align:center;
-    padding:30px;
+    padding:40px;
+    margin-top:40px;
     background:#000;
+    color:#aaa;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .cover{
+        height:220px;
+    }
+
+    .profile img{
+        width:120px;
+        height:120px;
+    }
+
+    header h1{
+        font-size:38px;
+    }
+
+    .hero h2{
+        font-size:28px;
+    }
+
+    .card{
+        width:90%;
+    }
+
 }
